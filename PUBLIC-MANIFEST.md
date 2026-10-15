@@ -6,10 +6,10 @@
 |---|---|---|
 | `00-方法论/README.md` | 二进制引擎开发方法总览 | 串联行为契约、调用链分析、改动设计、分层验证、证据记录，以及从项目记录提炼公共知识并用清单和更新日志复核的方法；不增加目标专属地址或实现 |
 | `02-数据结构/object-identifiers-and-records.md` | 对象类型与编号转换 | 区分战术单位、角色数据、Data 记录和调用帧局部值；样本地址与步长仅作定位线索 |
-| `README.md` | 适用范围、许可说明和目录导航 | 含 6.5pl 样本范围声明及非商业互引规则；不代表跨引擎验证 |
+| `README.md` | 适用范围、许可说明和目录导航 | 含 6.5pl 样本范围声明、非商业互引规则，并明确允许非商业克隆和 Fork；不代表跨引擎验证 |
 | `CHANGELOG.md` | 候选包内容更新记录 | 只记公开知识内容，不记项目内部进度 |
 | `PUBLIC-MANIFEST.md` | 本文件 | 逐项限定发布内容 |
-| `LICENSE.md` | 自定义非商业许可 | 明确许可范围、署名要求、禁止的商业使用和第三方材料边界；不对应标准 SPDX 标识 |
+| `LICENSE.md` | 自定义非商业许可 | 明确允许非商业克隆/Fork、许可范围、署名要求、禁止的商业使用和第三方材料边界；不对应标准 SPDX 标识 |
 | `01-核心引擎/core-engine.md` | 特技判定路径与返回值 | 单一样本的静态调用关系；地址仅作线索 |
 | `01-核心引擎/stub-function.md` | 桩函数参数追踪方法 | 使用占位符示意，不提供可直接应用的补丁 |
 | `01-核心引擎/dispatcher-function.md` | 调度和预检分支分析方法 | 样本静态控制流；不外推返回值语义 |
@@ -22,7 +22,7 @@
 | `06-可复用Skills/engine-feature-development/evals/trigger-evals.json` | skill 触发范围评估样例 | 只用于说明何时应使用该 skill，不是行为验收结果 |
 | `06-可复用Skills/x32dbg-debugging/SKILL.md` | x32dbg/x64dbg 通用动态调试指南 | 不含目标专属地址、数据布局、补丁分配或本地环境配置；引用官方文档 |
 | `06-可复用Skills/x32dbg-debugging/evals/evals.json` | 动态调试 skill 的评估提示 | 待运行场景；不代表独立行为评估已经完成 |
-| `07-工具参考/stub-scanner-reference/README.md` | 特技桩扫描器参考说明 | 明示从样本规则整理、需用户自行配置和适配、扫描结果需人工复核；不承诺跨版本直接运行 |
+| `07-工具参考/stub-scanner-reference/README.md` | 特技桩扫描器参考说明 | 明示可在非商业许可下克隆并自行适配；需用户填写配置并复核结果，不承诺跨版本直接运行 |
 | `07-工具参考/stub-scanner-reference/scan_engine.py` | 扫描器命令行入口 | 只读调用扫描模块；输出候选记录，不写入输入引擎 |
 | `07-工具参考/stub-scanner-reference/profile.example.json` | 用户配置模板 | 字段为空，不含目标地址；由使用者针对自己的文件填写 |
 | `07-工具参考/stub-scanner-reference/requirements.txt` | 扫描器依赖声明 | 仅声明 Capstone 依赖，不含构建工具或完整 Toolbox 依赖 |
